@@ -24,8 +24,11 @@ CREATE TABLE cart_items (
 );
 
 INSERT INTO products (name, description, cost) VALUES
-    ('PLACEHOLDER_PRODUCT_1', 'PLACEHOLDER_DESCRIPTION_1', 0.00),
-    ('PLACEHOLDER_PRODUCT_2', 'PLACEHOLDER_DESCRIPTION_2', 0.00),
-    ('PLACEHOLDER_PRODUCT_3', 'PLACEHOLDER_DESCRIPTION_3', 0.00),
-    ('PLACEHOLDER_PRODUCT_4', 'PLACEHOLDER_DESCRIPTION_4', 0.00),
-    ('PLACEHOLDER_PRODUCT_5', 'PLACEHOLDER_DESCRIPTION_5', 0.00);
+    ('Iron Longsword', 'A dependable steel blade for everyday adventuring.', 45.00),
+    ('Oak Buckler', 'Lightweight shield with iron rim for quick defense.', 22.50),
+    ('Traveler''s Leather Armor', 'Flexible leather armor with reinforced stitching.', 60.00),
+    ('Steel Chainmail', 'Protective chainmail shirt for the front line.', 120.00),
+    ('Hunter''s Shortbow', 'Short bow ideal for close woodland shots.', 38.00),
+    ('Bundle of Arrows (20)', 'Fletched arrows with iron tips.', 12.00),
+    ('Lesser Healing Potion', 'Restores a small amount of health.', 15.00),
+    ('Torch (Pack of 3)', 'Long-burning torches for dark tunnels.', 6.00);

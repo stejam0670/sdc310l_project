@@ -11,6 +11,11 @@ Barebones school project for a simple product catalog and cart.
 
 These SQL scripts assume a database named `lab_project` already exists.
 
+### Configure credentials
+
+1. Copy `config.example.php` to `config.local.php`.
+2. Update the values in `config.local.php` to match your local MySQL setup.
+
 ### Create tables and seed products
 
 Run `db/scripts/setup.sql` in MySQL.

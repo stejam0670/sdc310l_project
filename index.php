@@ -1,5 +1,6 @@
 <?php
 // Simple landing page for Week 2 scope.
+$checkout_success = isset($_GET['checkout']) && $_GET['checkout'] === 'success';
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,6 +14,9 @@
     <main class="page">
         <section class="panel">
             <h1>Alex's Fantasy Shop</h1>
+            <?php if ($checkout_success): ?>
+                <p><strong>Thank you for your order.</strong> The guild quartermaster is preparing your items.</p>
+            <?php endif; ?>
             <p>Welcome to the guild outpost. Browse wares or review your cart.</p>
             <ul class="links">
                 <li><a href="catalog.php">Catalog</a></li>

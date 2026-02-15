@@ -2,6 +2,8 @@
 require_once __DIR__ . '/db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $redirect_target = 'cart.php';
+
     if (isset($_POST['update_cart'])) {
         if (isset($_POST['quantity']) && is_array($_POST['quantity'])) {
             foreach ($_POST['quantity'] as $cart_item_id => $qty) {
@@ -22,9 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     } elseif (isset($_POST['checkout'])) {
         $mysqli->query('TRUNCATE TABLE cart_items');
+        $redirect_target = 'index.php?checkout=success';
     }
 
-    header('Location: cart.php');
+    header('Location: ' . $redirect_target);
     exit();
 }
 

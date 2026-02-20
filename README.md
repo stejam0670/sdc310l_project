@@ -23,3 +23,13 @@ Run `db/scripts/setup.sql` in MySQL.
 ### Tear down
 
 Run `db/scripts/teardown.sql` to drop the tables.
+
+## Week 4 MVC Status
+
+Architecture refactor is complete and implemented in-place.
+
+| Task Name | Task Description | Status |
+|---|---|---|
+| Set up models | Migrated DB and data-access logic into `models/` (`Database.php`, `ProductModel.php`, `CartModel.php`). | Completed |
+| Set up views | Moved rendering/display markup into `views/` templates (`home`, `catalog`, `cart`). | Completed |
+| Set up controllers | Moved page request/business flow into `controllers/` and converted entry files to simple controller-function dispatch. | Completed |
